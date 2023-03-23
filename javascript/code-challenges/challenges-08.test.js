@@ -54,17 +54,35 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
+  let sortChildrenThenAlpha = charArray.sort((a, b) => {
+    console.log(a,b);
+    if (a.children.length < b.children.length) {
+      return -1;
+    }
+    if (a.children.length > b.children.length) {
+      return 1;
+    } else {
+      // a must be equal to b
+      return a.house > b.house ? 1 : -1;
+    }
+  }
+  );
+  return sortChildrenThenAlpha;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named containsW that takes in a string. This function should use a regular expression pattern to return true if the string contains the letter 'w' in lower case or false if it does not. 
+Write a function named containsW that takes in a string. This function should use a regular expression pattern to return true if the string contains the letter 'w' in lower case or false if it does not.
 
 ------------------------------------------------------------------------------------------------ */
 
 const containsW = (str) => {
   // Solution code here...
+  let regexPattern = /w/;
+  return regexPattern.test(str);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -81,6 +99,8 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  let regexPattern = /\d/;
+  return regexPattern.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,6 +112,8 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
+  let regexPattern = /world/;
+  return regexPattern.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,6 +126,8 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regexPattern = /^[A-Z][a-z0-9_-]{3,19}$/;
+  return regexPattern.test(str);
 };
 
 /* ------------------------------------------------------------------------------------------------
