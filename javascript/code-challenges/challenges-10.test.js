@@ -9,7 +9,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str) {
   // Solution code here...
-  return str.split('').splice(-10);
+  // return str.split('').splice(-10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -28,9 +28,9 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
-  let flattened = matrix.flat();
-  console.log(flattened);
-  return Math.max(...flattened);
+  // let flattened = matrix.flat();
+  // console.log(flattened);
+  // return Math.max(...flattened);
 };
 
 /* ------------------------------------------------------------------------------------------------
