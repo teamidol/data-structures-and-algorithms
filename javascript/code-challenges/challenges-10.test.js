@@ -49,12 +49,13 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...  (not rendering as passed)
-  let flattened = matrix.flat();
-  let reduced = flattened.reduce((acc,val)=>acc+val);
-  console.log(reduced);
-  let numbered = +reduced;
-  console.log(numbered);
-  return numbered;
+
+  // let flattened = matrix.flat();
+  // let reduced = flattened.reduce((acc,val)=>acc+val);
+  // console.log(reduced);
+  // let numbered = +reduced;
+  // console.log(numbered);
+  // return numbered;
 
 };
 
