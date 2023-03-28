@@ -147,9 +147,7 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 const reversedString = (str) => {
   // Solution code here... (study)
   let splitted = str.split('');
-  let revd = splitted.reduce((acc,curVal)=>{
-    return curVal + acc;
-  },'');
+  let revd = splitted.reduce((acc,curVal)=> curVal + acc,'');
   return revd;
 };
 
