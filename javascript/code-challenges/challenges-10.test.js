@@ -48,7 +48,7 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  // Solution code here...
+  // Solution code here...had to add "0" at the end
   let flattened = matrix.flat();
   let reduced = flattened.reduce((acc, val) => acc + val, 0);
   console.log(reduced);

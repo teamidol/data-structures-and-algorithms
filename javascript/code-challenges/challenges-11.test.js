@@ -20,14 +20,14 @@ Becomes:
 
 function transformToLis(obj) {
   // Solution code here...
-  //   console.log(obj);
-  //   let wtvr = Object.entries(obj);
-  //   console.log(wtvr);
-  //   let wtvr2 = Object.entries(obj)[0];
-  //   console.log(wtvr2);
-  //   let wtvr3 = Object.values(obj)[0];
-  //   console.log(wtvr3);
-  //   let answer = obj.map(ans => Object.values()
+  console.log(obj);
+  let wtvr = Object.entries(obj);
+  console.log(wtvr);
+  let wtvr2 = Object.entries(obj)[0];
+  console.log(wtvr2);
+  let wtvr3 = Object.values(obj)[0];
+  console.log(wtvr3);
+  // let answer = obj.map(ans => Object.values()
 }
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -41,8 +41,8 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  // console.log(target);
-  // console.log(input);
+  console.log(target);
+  console.log(input);
   let count = 0;
   input.map(subArr => subArr.map(num => {
     if (num === target) {
@@ -100,7 +100,7 @@ const divisibleByFiveTwoToThePower = (input) => {
     });
     let newArr2 = [];
     newArr.forEach(pwr => {
-      newArr2.push(Math.pow(pwr,2));
+      newArr2.push(Math.pow(pwr, 2));
       console.log(newArr2);
       return newArr2;
     });
