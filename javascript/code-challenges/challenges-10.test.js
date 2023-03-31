@@ -29,7 +29,7 @@ return: 23
 const findMax = (matrix) => {
   // Solution code here...
   let flattened = matrix.flat();
-  console.log(flattened);
+  // console.log(flattened);
   return Math.max(...flattened);
 };
 
@@ -51,9 +51,9 @@ const totalSum = (matrix) => {
   // Solution code here...
   let flattened = matrix.flat();
   let reduced = flattened.reduce((acc, val) => acc + val, 0);
-  console.log(reduced);
+  // console.log(reduced);
   let numbered = +reduced;
-  console.log(numbered);
+  // console.log(numbered);
   return numbered;
 };
 
@@ -82,13 +82,13 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  console.log(stores);
+  // console.log(stores);
   let hourSales = [];
   for (let i = 0; i < stores[0].length; i++) {
     let hourlyTotal = 0;
     for (let j = 0; j < stores.length; j++) {
       hourlyTotal += stores[j][i];
-      console.log(hourlyTotal);
+      // console.log(hourlyTotal);
 
     }
     hourSales.push(hourlyTotal);

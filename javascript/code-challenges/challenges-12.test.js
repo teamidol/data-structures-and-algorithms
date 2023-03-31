@@ -10,14 +10,16 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 
 const replaceZeros = (string) => {
   // Solution code here...
-  console.log(string);
+  // console.log(string);
   let wtvr = string.replace(new RegExp('0'), 'zero');
-  console.log(wtvr);
+  // console.log(wtvr);
   let wtvr2 = wtvr.replace(new RegExp('0'), 'zero');
-  console.log(wtvr2);
+  // console.log(wtvr2);
   return wtvr2;
 };
-
+// ....or....
+// let regex = /0/g;
+// return string.replace(regex),'zero');};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -28,9 +30,10 @@ If the PIN is four numerical digits long, return true. Otherwise, return false.
 
 const validatePin = (pin) => {
   // Solution code here...
-  console.log(pin);
-  let four = pin.RegExp([0-9][0-9][0-9][0-9]);
-  console.log(four);
+  // console.log(pin);
+  let pinPattern = /^\d{4}$/g;
+  return pinPattern.test(pin);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,6 +46,8 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 
 const validateWord = (word) => {
   // Solution code here...
+  let wordPattern = /^\D{5,10}$/g;
+  return wordPattern.test(word);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,6 +60,8 @@ If it does, return true. If not, return false.
 
 const hasNumber = (string) => {
   // Solution code here...
+  let wordPattern = /[a-zA-Z]+\d+/g;
+  return wordPattern.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,6 +82,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 
 const validateEmail = (email) => {
   // Solution code here...
+  let emailPattern = /^[a-zA-Z0-9]+\.?[a-zA-Z0-9]+@[a-zA-Z0-9]+.(com|org|net)$/g;
+  return emailPattern.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,6 +109,8 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  let phonePattern = /^(\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$/g;
+  return phonePattern.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
