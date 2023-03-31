@@ -55,7 +55,7 @@ let characters = [
 const sortByChildren = (charArray) => {
   // Solution code here...ternary used
   let sortChildrenThenAlpha = charArray.sort((a, b) => {
-    console.log(a,b);
+    // console.log(a,b);
     if (a.children.length < b.children.length) {
       return -1;
     }
