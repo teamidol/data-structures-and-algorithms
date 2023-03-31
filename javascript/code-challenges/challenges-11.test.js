@@ -20,7 +20,6 @@ Becomes:
 
 function transformToLis(obj) {
   // Solution code here...
-  // console.log(obj);
   return Object.keys(obj).map(key => {
     return (
       `<li>${key}: ${obj[key]}</li>`
@@ -44,7 +43,7 @@ const count = (target, input) => {
   input.map(subArr => subArr.map(num => {
     if (num === target) {
       count += 1;
-    }
+    };
   }));
   return count;
 };
@@ -83,8 +82,7 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
   return input.map((row) => {
-    return row.filter(cell => typeof cell === 'number' &&
-      cell % 5 === 0).map(cell => Math.pow(2, cell));
+    return row.filter(cell => typeof cell === 'number' && cell % 5 === 0).map(cell => Math.pow(2, cell));
   });
 };
 
@@ -165,7 +163,8 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
-  return data.reduce((shortestSoFar, nextCharacter) => +shortestSoFar.height < +nextCharacter.height ? shortestSoFar : nextCharacter);
+  return data.reduce((shortestSoFar, nextCharacter) => +shortestSoFar.height < +nextCharacter.height ? shortestSoFar : nextCharacter).name;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
