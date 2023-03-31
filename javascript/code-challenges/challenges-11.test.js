@@ -20,7 +20,7 @@ Becomes:
 
 function transformToLis(obj) {
   // Solution code here...
-  console.log(obj);
+  // console.log(obj);
   return Object.keys(obj).map(key => {
     return (
       `<li>${key}: ${obj[key]}</li>`

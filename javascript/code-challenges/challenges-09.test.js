@@ -136,7 +136,7 @@ const getHouses = (arr) => {
   // Solution code here...
   // arr[0].name.......Object.keys(arr[0])[0]
   arr.forEach(nickname => houses.push(nickname.house));
-  console.log(houses);
+  // console.log(houses);
   return houses;
 };
 
