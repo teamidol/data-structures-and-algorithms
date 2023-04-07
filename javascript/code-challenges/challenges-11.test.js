@@ -43,8 +43,9 @@ const count = (target, input) => {
   input.map(subArr => subArr.map(num => {
     if (num === target) {
       count += 1;
-    };
+    }
   }));
+
   return count;
 };
 
@@ -155,6 +156,7 @@ let findMaleAndFemale = (data) => {
     .join(' and ');
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -164,7 +166,6 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 let findShortest = (data) => {
   // Solution code here...
   return data.reduce((shortestSoFar, nextCharacter) => +shortestSoFar.height < +nextCharacter.height ? shortestSoFar : nextCharacter).name;
-
 };
 
 /* ------------------------------------------------------------------------------------------------
