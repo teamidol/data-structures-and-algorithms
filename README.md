@@ -24,4 +24,6 @@ To run your tests
 
 ## **401 CODE CHALLENGES README**
 
-* [401 Code Challenges ReadMe](/java/datastructures/README.md)
+* [Array Reverse](arrayReverse/README.md)
+
+* [Array Insert Shift](arrayInsertShift/README.md)
