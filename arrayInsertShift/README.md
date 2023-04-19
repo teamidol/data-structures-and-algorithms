@@ -1,8 +1,8 @@
-# Challenge Title
+# shiftInsertArray
 <!-- Description of the challenge -->
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![whiteboard2](img/whiteboard2.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
